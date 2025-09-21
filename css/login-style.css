@@ -1,54 +1,61 @@
-.contain-login {
-  background-color: #336286;
-  overflow: hidden;
-}
-
-.login-pic {
-  width: 60vw;
-  height: 100vh;
-  object-fit: contain;
-  transition: all 1.2s ease;
-}
-
-.login-pic:hover {
-  transform: scale(1.2);
-}
-
-main {
+body {
   background-color: #ffdf88;
+}
+
+.contain-section {
+  height: 100vh;
   position: relative;
-  display: flex;
 }
 
-.logo-login,
-.text-login {
-  width: 10rem;
+.top-right-logo {
   position: absolute;
-}
-
-.logo-login {
   top: 1rem;
   right: 1rem;
 }
 
-.text-login {
-  top: 8em;
+.img-section {
+  background-color: #336286;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 1.2s ease;
+}
+
+.img-1:hover {
+  transform: scale(1.2);
+}
+
+.logo-pic-1,
+.logo-text {
+  width: 10rem;
+  position: absolute;
+  top: 1rem;
   right: 1rem;
 }
 
-.login-main {
-  width: 40vw;
-  justify-items: center;
-  align-self: center;
+.row {
+  height: 100%;
+  padding: 0;
 }
 
-.login-main h1 {
-  position: absolute;
-  top: 5em;
-  /* margin-bottom: 7em; */
+.logo-text {
+  top: 9rem;
+}
+
+.right-side {
+  padding: 2rem;
+  height: 100%;
+}
+
+.contain-section h1 {
   font-size: 3.6rem;
   color: #333;
-  font-weight: bold;
+  margin-bottom: 4rem;
 }
 
 .username-label,
@@ -58,13 +65,10 @@ main {
   font-weight: bold;
 }
 
-form {
-  margin-top: 7em;
-}
-
 input[type="text"],
 input[type="password"] {
-  width: 36.7rem;
+  width: 100%;
+  max-width: 36.7rem;
   height: 5.2rem;
   border-radius: 15px;
   margin-bottom: 2rem;
@@ -74,6 +78,19 @@ input[type="password"] {
 }
 input[name="password"] {
   margin-bottom: 0;
+}
+
+.link {
+  text-align: center;
+}
+
+.link a:link,
+.link a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #777;
+  font-weight: 400;
+  font-size: 1.7rem;
 }
 
 .submit {
@@ -97,15 +114,38 @@ input[name="password"] {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.link {
-  text-align: center;
+.form-section {
+  width: 100%;
+  max-width: 36rem;
+  /* text-align: center; */
+  padding: 2rem;
 }
 
-.link a:link,
-.link a:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #777;
-  font-weight: 400;
-  font-size: 1.7rem;
-}
+/* @media (max-width: 466px) {
+  .form-section {
+    padding: 1.5rem;
+  }
+
+  .right-side {
+    margin-top: 25vh;
+    height: 100vh;
+    justify-content: center;
+  }
+  .logo-pic-1 {
+    width: 10rem;
+  }
+
+  .logo-text {
+    width: 7rem;
+    right: 3rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+  }
+
+  .submit {
+    width: 18rem;
+  }
+} */
