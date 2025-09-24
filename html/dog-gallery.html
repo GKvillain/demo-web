@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+
+    <title>Dog gallery</title>
+  </head>
+  <body>
+    <header>
+      <div class="d-none d-md-block">
+        <div class="logo-pic">
+          <img src="../img/image 9.png" alt="logo-website-doggo" class="logo" />
+          <div class="logo-pic-section">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="magnifie"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                /></svg
+            ></a>
+
+            <a href="#"
+              ><img
+                src="../img/profile-pic-11.jpg"
+                alt=""
+                class="profile-pic-user"
+            /></a>
+          </div>
+        </div>
+
+        <nav class="navigation-menu">
+          <ul class="vertical-menu">
+            <li>
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >About dog</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-toggle"
+                      >Dog info</a
+                    >
+                    <ul class="dropdown-menu dropdown-2">
+                      <li><a href="#" class="dropdown-item">Breeds</a></li>
+                      <li><a href="#" class="dropdown-item">Dog news</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Pet insurance</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Common disease</a>
+                      </li>
+                      <li><a href="#" class="dropdown-item">Poison</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-toggle"
+                      >Dog social</a
+                    >
+                    <ul class="dropdown-menu dropdown-2">
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Dog community forum</a
+                        >
+                      </li>
+                      <li><a href="#" class="dropdown-item">Dog gallery</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="#">Adoption</a></li>
+            <li>
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Shop</a
+                >
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Shopping</a></li>
+                  <li><a href="#" class="dropdown-item">Card</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Expert</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Advice</a></li>
+                  <li><a href="#" class="dropdown-item">Traning</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >About us</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">About us</a></li>
+                  <li><a href="#" class="dropdown-item">Contact</a></li>
+                  <li><a href="#" class="dropdown-item">Team</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-md-none">
+        <div class="tap-bar nav-mobile" onclick="menu.hidden^=1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+            class="hamburger"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+
+        <!-- <ul id="menu" hidden>
+          <li>
+            <a href="#" onclick="dropdown.hidden^=1">About dog</a>
+            <ul>
+              <li id="dropdown" hidden>
+                <a href="#" onclick="muhehe.hidden^=1">Dog info</a>
+                <ul id="muhehe">
+                  <li><a href="#">Breeds</a></li>
+                  <li><a href="#">Dog news</a></li>
+                  <li><a href="#">Pet insurance</a></li>
+                  <li><a href="#">Common diseases</a></li>
+                  <li><a href="#">Poison</a></li>
+                </ul>
+              </li>
+
+              <li id="dropdown" hidden><a href="#">Dog social</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Adoption</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Expert</a></li>
+          <li><a href="#">Team</a></li>
+        </ul> -->
+
+        <ul hidden id="menu">
+          <li>
+            <div class="dropdown">
+              <div
+                class="about-dog dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <a href="#">About dog</a>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu-mb">
+                  <a href="#" class="dropdown-item dropdown-toggle">Dog info</a>
+                  <ul class="dropdown-menu dropdown-2-mb">
+                    <li><a href="#" class="dropdown-item">Breeds</a></li>
+                    <li><a href="#" class="dropdown-item">Dog news</a></li>
+                    <li><a href="#" class="dropdown-item">Pet insurance</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item">Common disease</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Poison</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu-mb">
+                  <a href="#" class="dropdown-item dropdown-toggle"
+                    >Dog social</a
+                  >
+                  <ul class="dropdown-menu dropdown-2-mb">
+                    <li>
+                      <a href="#" class="dropdown-item">Dog community forum</a>
+                    </li>
+                    <li>
+                      <a href="dog-gallery.html" class="dropdown-item"
+                        >Dog gallery</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="about-dog"><a href="#">Adoption</a></div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <div
+                class="dropdown-toggle about-dog"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <a href="#">Shop</a>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Shopping</a></li>
+                <li><a href="#" class="dropdown-item">Card</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <div
+                class="dropdown-toggle about-dog"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <a href="#">Expert</a>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Advice</a></li>
+                <li><a href="#" class="dropdown-item">Traning</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <div
+                class="dropdown-toggle about-dog"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <a href="#">About us</a>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">About us</a></li>
+                <li><a href="#" class="dropdown-item">Contact</a></li>
+                <li><a href="#" class="dropdown-item">Team</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <article class="container-fluid">
+      <header class="post-header">
+        <h1>Dog Gallery</h1>
+        <p class="d-none d-md-block">
+          Welcome to our Dog Gallery — a space full of wagging tails, goofy
+          smiles, and heartwarming moments. Here, our community shares snapshots
+          of their beloved dogs, from playful adventures to lazy nap times.
+          Browse through and feel the love that every picture tells.
+        </p>
+      </header>
+      <section class="gallery-pic-dog">
+        <div class="row text-center contain-row">
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1" id="pic-1" onclick="myFunction()">
+              <img
+                src="../img/gallery-dog-1.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-1.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Anoir Chafik</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1" id="pic-1">
+              <img
+                src="../img/gallery-dog-2.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-2.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Justin Aikin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1">
+              <img
+                src="../img/gallery-dog-3.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-3.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Jesse Schoff</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center contain-row">
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1">
+              <img
+                src="../img/gallery-dog-4.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-4.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Christopher Ayme</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pic-1 col-sm-12 box">
+              <img
+                src="../img/gallery-dog-5.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-5.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Marcus Cramer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pic-1 col-sm-12 box">
+              <img
+                src="../img/gallery-dog-6.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-6.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Marcus Cramer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center contain-row">
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1">
+              <img
+                src="../img/gallery-dog-7.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer d-flex">
+                <img
+                  src="../img/profile-pic-9.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Joe Caione</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1">
+              <img
+                src="../img/gallery-dog-8.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-8.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Ron Fung</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 box">
+            <div class="pic-1">
+              <img
+                src="../img/gallery-dog-9.avif"
+                alt=""
+                class="pic-dog-gall"
+              />
+              <div class="photographer">
+                <img
+                  src="../img/profile-pic-10.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Patrick Hendry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-pic-detail d-none" id="detail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="cross-icon"
+            id="cross-con"
+            onclick="closePage()"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+
+          <img src="../img/gallery-dog-1.avif" alt="" class="dog" />
+          <div class="details">
+            <div>
+              <h5>Author</h5>
+              <div class="pic-author">
+                <img
+                  src="../img/profile-pic-1.jpg"
+                  alt=""
+                  class="pic-photographer"
+                />
+                <p>Anoir Chafik</p>
+              </div>
+            </div>
+            <div>
+              <h5>Downloads</h5>
+              <p>40,302</p>
+            </div>
+            <div>
+              <h5>Views</h5>
+              <p>100,221</p>
+            </div>
+            <div>
+              <h5>Publish date</h5>
+              <p>August 28, 2020</p>
+            </div>
+          </div>
+          <div class="button-detail-section">
+            <a href="#" class="fav">Favourite</a>
+            <a href="#" class="download">Download</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="btn btn-more d-flex justify-content-center">
+        <a href="#">More</a>
+      </div>
+    </article>
+    <script>
+      function myFunction() {
+        document.getElementById("detail").style.display = "block";
+      }
+      function closePage() {
+        document.getElementById("detail").style.display = "none";
+      }
+      function toggleDropdown() {
+        document.getElementById("dropdown").style.display = "block";
+        document.getElementById("dropdown").style.backgroundColor = "#4a2c23";
+      }
+    </script>
+    <!-- Correct way -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  </body>
+</html>
